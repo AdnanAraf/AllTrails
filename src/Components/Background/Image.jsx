@@ -27,41 +27,40 @@ const Image = () => {
         infiniteLoop
       >
         <div>
-          <div className="">
+          <div className="relative">
             <img
-              className="h-[600px] w-full relative"
-              src="https://i.ibb.co/QFGr5hz/senior-woman-electric-mountainbike-181624-37496.jpg "
+              className="h-[600px] w-full "
+              src="https://i.ibb.co/6NtJq9L/hero-logged-out-1-eur-w2800-35e1ac42108faf1c3286d85bd1ba8ec8c571b240398c136364649517f193f8c9.jpg "
               alt="Image 1"
             />
-          </div>
-          <div>
-            <h1 className="absolute text-[70px] text-white font-semibold  top-[240px] left-0 bottom-0 right-0">
-              Find your outdoors
-            </h1>
-            <input
-              className="absolute top-[350px] left-[540px] bottom-0 right-0 h-[70px] w-[620px] pl-[80px] outline-none border-white rounded-full text-[22px]"
-              type="search"
-              placeholder="Search by city, park, or trail name"
-            ></input>
-            <FaSearch className="absolute top-[375px] left-[560px]  bottom-0 right-0 w-[25px] h-[25px]" />
-            <div className="absolute top-[360px] left-[1100px] p-[15px] bottom-0 right-0 rounded-full h-[50px] w-[50px]  bg-green-900 ">
-              <FaArrowRight className="text-white text-[23px]  " />
+            <div className="absolute top-[180px] left-0 bottom-0 right-0">
+              <h1 className=" text-[65px] text-white font-semibold ">
+                Find your outdoors
+              </h1>
+              <div>
+                <div className="relative">
+                  <input
+                    className=" h-[70px] my-[20px] w-[620px] pl-[80px] outline-none border-white rounded-full text-[22px]"
+                    type="search"
+                    placeholder="Search by city, park, or trail name"
+                  ></input>
+
+                  <FaSearch className="absolute top-[47px] right-[260px]   w-full  h-[20px]" />
+                </div>
+              </div>
+
+              <Link
+                to="explore"
+                className=" text-[20px] underline text-white font-semibold  "
+              >
+                Explore nearby trails
+              </Link>
             </div>
-            <Link className="absolute text-[30px] underline text-white font-semibold  top-[440px] left-0 bottom-0 right-0">
-              Explore nearby trails
-            </Link>
           </div>
         </div>
         <div>
-          <div className="flex">
-            <img
-              className="h-[600px]"
-              src="https://i.ibb.co/Js6VZkX/photo-1486870591958-9b9d0d1dda99-ixlib-rb-4-0.jpg"
-            />
-            <img
-              className="h-[600px]"
-              src="https://i.ibb.co/QQxB3RF/premium-photo-1676210538560-f451e2c5a59b-ixlib-rb-4-0.jpg"
-            ></img>
+          <div>
+            <img src="https://i.ibb.co/ZJby8tk/hero-logged-out-3-w2800-331a53e0d8a7db7ef047733917fb264a703398dead15dcc33136db1e8876c231.jpg" />
           </div>
           <div>
             <h1 className="absolute text-[70px] text-white font-semibold  top-[240px] left-0 bottom-0 right-0">

@@ -5,6 +5,7 @@ import Home from "../Home/Home";
 import Backgroundinfo from "../Background/Backgroundinfo";
 import Bothsection from "../NatureSection/Bothsection";
 import Home1 from "../Home/Home1";
+import Mapping from "../Map/Mapping";
 
 const Routes = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const Routes = createBrowserRouter([
       {
         path: "/",
         element: <Home1 />,
+      },
+      {
+        path: "explore",
+        element: <Mapping />,
       },
     ],
   },
