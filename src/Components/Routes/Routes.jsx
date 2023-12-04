@@ -5,7 +5,8 @@ import Home from "../Home/Home";
 import Backgroundinfo from "../Background/Backgroundinfo";
 import Bothsection from "../NatureSection/Bothsection";
 import Home1 from "../Home/Home1";
-import Mapping from "../Map/Mapping";
+
+import Direction from "../Map/Direction";
 
 const Routes = createBrowserRouter([
   {
@@ -18,7 +19,7 @@ const Routes = createBrowserRouter([
       },
       {
         path: "explore",
-        element: <Mapping />,
+        element: <Direction />,
       },
     ],
   },
