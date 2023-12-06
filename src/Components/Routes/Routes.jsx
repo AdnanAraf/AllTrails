@@ -7,6 +7,7 @@ import Bothsection from "../NatureSection/Bothsection";
 import Home1 from "../Home/Home1";
 
 import Direction from "../Map/Direction";
+import TrailsFree from "../TrailsFreee/TrailsFree";
 
 const Routes = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const Routes = createBrowserRouter([
       {
         path: "explore",
         element: <Direction />,
+      },
+      {
+        path: "trailsfree",
+        element: <TrailsFree />,
       },
     ],
   },

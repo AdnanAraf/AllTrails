@@ -11,7 +11,7 @@ const Rightside = () => {
           </Link>
           <Link
             className="font-titleFont font-bold p-[10px] bg-green-400 rounded-full hover:bg-green-500 text-[15px]"
-            to="/"
+            to="trailsfree"
           >
             Try AllTrails+ for free
           </Link>
