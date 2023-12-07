@@ -8,6 +8,7 @@ import Home1 from "../Home/Home1";
 
 import Direction from "../Map/Direction";
 import TrailsFree from "../TrailsFreee/TrailsFree";
+import Help from "../Help/Help";
 
 const Routes = createBrowserRouter([
   {
@@ -27,6 +28,11 @@ const Routes = createBrowserRouter([
         element: <TrailsFree />,
       },
     ],
+  },
+
+  {
+    path: "help",
+    element: <Help />,
   },
 ]);
 

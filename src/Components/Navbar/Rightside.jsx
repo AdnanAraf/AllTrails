@@ -6,7 +6,7 @@ const Rightside = () => {
     <div>
       <div className=" my-[30px] mx-[50px]">
         <ul>
-          <Link className="font-titleFont font-semibold p-[30px]" to="/">
+          <Link className="font-titleFont font-semibold p-[30px]" to="help">
             Help
           </Link>
           <Link
