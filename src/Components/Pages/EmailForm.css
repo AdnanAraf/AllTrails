@@ -1,0 +1,51 @@
+.email-form {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.email-form label {
+  position: absolute;
+  pointer-events: none;
+  transition: 0.3s ease all;
+  transform-origin: 0% 0%;
+  font-size: 16px;
+  left: 10px;
+  top: 10px;
+}
+
+.email-form input {
+  font-size: 16px;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.email-form.focused label {
+  transform: translateY(-20px) scale(0.8);
+  color: #555;
+}
+
+.label {
+  transition: 0.3s ease all;
+  font-size: 16px;
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  pointer-events: none;
+}
+
+.focused {
+  top: 5px;
+  font-size: 12px;
+}
+
+.border-0 {
+  border: none;
+}
+
+.outline-none {
+  outline: none;
+}

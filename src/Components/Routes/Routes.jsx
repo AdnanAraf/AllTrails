@@ -9,6 +9,7 @@ import Home1 from "../Home/Home1";
 import Direction from "../Map/Direction";
 import TrailsFree from "../TrailsFreee/TrailsFree";
 import Help from "../Help/Help";
+import Login from "../Pages/Login";
 
 const Routes = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const Routes = createBrowserRouter([
       {
         path: "trailsfree",
         element: <TrailsFree />,
+      },
+      {
+        path: "login",
+        element: <Login />,
       },
     ],
   },

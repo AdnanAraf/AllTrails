@@ -4,7 +4,7 @@ import Gallery from "../Gallery/Gallery";
 
 const Adventure = () => {
   return (
-    <div className="mt-[800px] ">
+    <div className="">
       <div className="flex justify-center">
         <div>
           <img

@@ -17,7 +17,7 @@ const Rightside = () => {
           </Link>
           <Link
             className="font-titleFont font-semibold pl-[20px] pr-[20px] pt-[10px] pb-[10px] mx-[10px] bg-gray-200 rounded-full text-[15px] hover:bg-gray-300"
-            to="/"
+            to="login"
           >
             Login
           </Link>
