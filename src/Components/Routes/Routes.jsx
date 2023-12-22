@@ -10,6 +10,8 @@ import Direction from "../Map/Direction";
 import TrailsFree from "../TrailsFreee/TrailsFree";
 import Help from "../Help/Help";
 import Login from "../Pages/Login";
+import SignUp from "../Pages/SignUp";
+import FreeAccount from "../Pages/FreeAccount";
 
 const Routes = createBrowserRouter([
   {
@@ -31,6 +33,14 @@ const Routes = createBrowserRouter([
       {
         path: "login",
         element: <Login />,
+      },
+      {
+        path: "sign",
+        element: <SignUp />,
+      },
+      {
+        path: "freeaccount",
+        element: <FreeAccount />,
       },
     ],
   },

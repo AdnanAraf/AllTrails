@@ -1,0 +1,27 @@
+.line {
+  display: inline-block;
+  width: 50px; /* Adjust the width of the lines as needed */
+  height: 1px;
+  background-color: #ccc; /* Adjust the color of the lines as needed */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.line::before,
+.line::after {
+  content: "";
+  display: inline-block;
+  width: 300px; /* Adjust the width of the lines as needed */
+  height: 1px;
+  background-color: #ccc; /* Adjust the color of the lines as needed */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.line::before {
+  left: -130px; /* Adjust the spacing from the text as needed */
+}
+.line::after {
+  right: -130px; /* Adjust the spacing from the text as needed */
+}
