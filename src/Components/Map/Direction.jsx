@@ -1,66 +1,19 @@
-import {
-  DirectionsRenderer,
-  DirectionsService,
-  GoogleMap,
-  LoadScript,
-  Marker,
-} from "@react-google-maps/api";
 import React, { useState } from "react";
-import Mapping from "./Mapping";
-
+import "./Direction.css";
+import "leaflet/dist/leaflet.css";
+import { MapContainer, TileLayer, useMap } from "react-leaflet";
 const Direction = () => {
-  const [Response, setResponse] = useState(null);
-
-  const origin = "Dhaka";
-  const destination = "Chittagong";
-  const directionsCallback = (response) => {
-    console.log(response);
-    if (response !== null) {
-      if (response.status === "OK") {
-        setResponse(response);
-      } else {
-        console.log("response", response);
-      }
-    }
-  };
   return (
-    <div>
-      <div>
-        <LoadScript googleMapsApiKey="AIzaSyAC9h32tgACHht4Y8A5nFxu8uWvjfSQ5eQ">
-          <GoogleMap
-            id="directional-example"
-            mapContainerStyle={{
-              height: "600px",
-              width: "1100px",
-              marginLeft: "400px",
-            }}
-            zoom={14}
-            center={{ lat: 23.8103, lng: 90.4125 }}
-          >
-            {/* <Marker position={center}></Marker> */}
-            {destination !== "" && origin !== "" && (
-              <DirectionsService
-                options={{
-                  destination: destination,
-                  origin: origin,
-                  travelMode: "DRIVING",
-                }}
-                callback={directionsCallback}
-              ></DirectionsService>
-            )}
-
-            {Response !== null && (
-              <DirectionsRenderer
-                options={{
-                  directions: Response,
-                }}
-              ></DirectionsRenderer>
-            )}
-          </GoogleMap>
-        </LoadScript>
-        {/* <Mapping /> */}
-      </div>
-    </div>
+    <MapContainer
+      className="absolute z-50"
+      center={[22.3752, 91.8349]}
+      zoom={13}
+    >
+      <TileLayer
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      />
+    </MapContainer>
   );
 };
 

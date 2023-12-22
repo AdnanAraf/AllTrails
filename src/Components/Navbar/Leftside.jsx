@@ -47,7 +47,7 @@ const Leftside = () => {
             onMouseEnter={handleDropdownOpen}
             onMouseLeave={handleDropdownClose}
           >
-            <button className="text-[15px] font-titleFont font-bold p-[20px] ">
+            <button className="text-[15px] font-titleFont font-bold p-[20px]">
               Saved
               <div className="mt-[-20px] ml-[80px] font-normal">
                 {isSavedDropdownOpen ? (
@@ -73,7 +73,7 @@ const Leftside = () => {
 
                 <Link
                   className="block px-4 py-4 text-sm text-gray-700 font-titleFont font-bold text-[15px] hover:bg-gray-200"
-                  to="/"
+                  to="map"
                 >
                   My Maps
                 </Link>
